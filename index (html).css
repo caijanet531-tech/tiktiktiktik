@@ -1,0 +1,481 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+}
+/* style pada header */
+.header{
+    background-color: beige;
+    padding: 20px;
+    text-align: center;
+}
+/* style pada topnav */
+.topnav{
+    overflow: hidden;
+    background-color: pink;
+}
+.topnav a{
+    float: left;
+    display: block;
+    color: brown;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.topnav :a:hover{
+    background-color: cornflowerblue;
+    color: brown;
+}
+.footer{
+    background-color: beige;
+    padding: 15px;
+    text-align: center;
+}
+/* biodata */
+body{
+    background-image: url(starspt3.jpg);
+    background-color: aliceblue;
+    background-size: cover;
+    background-position: center;
+}
+
+h2{
+    background-color:aquamarine;
+    color:hotpink;
+    text-align: center;
+    font-family: "abcd";
+}
+
+@font-face{
+    font-family: "abcd";
+    src: url(bebas_note/Bebas\ Notes.otf);
+}
+
+h1{
+    background-color:deeppink;
+    color: rgb(177, 161, 254);
+    text-align: center;
+    width: 600px;
+}
+
+div.biodata{
+    margin: 30px auto;
+    width: 70%;
+    background-color:lemonchiffon;
+    color:goldenrod;
+    padding: 30px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+div.foto{
+    position: relative;
+    width: 250px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid rosybrown;
+}
+
+div.foto img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+div.foto img.top{
+    opacity: 1;
+    z-index: 2;
+}
+
+div.foto:hover img.top{
+    opacity: 0;
+    transform: scale(1.1);
+}
+
+div.foto img.bottom{
+    opacity: 0;
+    z-index: 1;
+}
+
+div.foto:hover img.bottom{
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+
+/* MAKANAN */
+
+div.makanan{
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    text-align: center;
+    overflow-x: auto;
+    padding: 20px;
+    scroll-behavior: smooth;
+}
+
+div.makanan::-webkit-scrollbar{
+    height: 10px;
+}
+
+div.makanan::-webkit-scrollbar-thumb{
+    background-color: hotpink;
+    border-radius: 10px;
+}
+
+div.makanan::-webkit-scrollbar-track{
+    background-color: aliceblue;
+    border-radius: 10px;
+}
+
+div.makanan img{
+    padding:10px;
+}
+
+div.macarons,
+div.cupcakes,
+div.sundae,
+div.cookie,
+div.dotcake{
+    width: 250px;
+    height: 280px;
+    flex: 0 0 250px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(red, green, blue, alpha);
+    color:black;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+div.macarons:hover,
+div.cupcakes:hover,
+div.sundae:hover,
+div.cookie:hover,
+div.dotcake:hover{
+    overflow:hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+    background-color: pink;
+    background-image: url(gzalazy\ bg.jpg);
+}
+
+
+/* MINUMAN */
+
+div.minuman{
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    text-align: center;
+    overflow-x: auto;
+    padding: 20px;
+    scroll-behavior: smooth;
+}
+
+div.minuman::-webkit-scrollbar{
+    height: 10px;
+}
+
+div.minuman::-webkit-scrollbar-thumb{
+    background-color: hotpink;
+    border-radius: 10px;
+}
+
+div.minuman::-webkit-scrollbar-track{
+    background-color: aliceblue;
+    border-radius: 10px;
+}
+
+div.minuman img{
+    padding:10px;
+}
+
+div.sotb,
+div.bluelagoon,
+div.colada,
+div.martini,
+div.codder{
+    width: 250px;
+    height: 280px;
+    flex: 0 0 250px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(red, green, blue, alpha);
+    color:black;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+div.sotb:hover,
+div.bluelagoon:hover,
+div.colada:hover,
+div.martini:hover,
+div.codder:hover{
+    overflow:hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+    background-color: pink;
+    background-image: url(lemon.png);
+}
+
+
+/* BUNGA */
+
+div.bunga{
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    text-align: center;
+    overflow-x: auto;
+    padding: 20px;
+    scroll-behavior: smooth;
+}
+
+div.bunga::-webkit-scrollbar{
+    height: 10px;
+}
+
+div.bunga::-webkit-scrollbar-thumb{
+    background-color: hotpink;
+    border-radius: 10px;
+}
+
+div.bunga::-webkit-scrollbar-track{
+    background-color: aliceblue;
+    border-radius: 10px;
+}
+
+div.bunga img{
+    padding:10px;
+}
+
+div.roses,
+div.chococosmos,
+div.cornflower,
+div.peony,
+div.bluehydrangea{
+    width: 250px;
+    height: 280px;
+    flex: 0 0 250px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(red, green, blue, alpha);
+    color:black;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+div.roses:hover,
+div.chococosmos:hover,
+div.cornflower:hover,
+div.peony:hover,
+div.bluehydrangea:hover{
+    overflow:hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+    background-color: pink;
+    background-image: url(splash.jpg);
+}
+
+
+/* KOTA */
+
+div.kota{
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    text-align: center;
+    overflow-x: auto;
+    padding: 20px;
+    scroll-behavior: smooth;
+}
+
+div.kota::-webkit-scrollbar{
+    height: 10px;
+}
+
+div.kota::-webkit-scrollbar-thumb{
+    background-color: hotpink;
+    border-radius: 10px;
+}
+
+div.kota::-webkit-scrollbar-track{
+    background-color: aliceblue;
+    border-radius: 10px;
+}
+
+div.kota img{
+    padding:10px;
+}
+
+div.valencia,
+div.edinburgh,
+div.vernazza,
+div.thessaloniki,
+div.losangeles{
+    width: 250px;
+    height: 280px;
+    flex: 0 0 250px;
+    border-radius: 0px;
+    box-shadow: 0 4px 8px 0 rgba(red, green, blue, alpha);
+    color:black;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+div.valencia:hover,
+div.edinburgh:hover,
+div.vernazza:hover,
+div.thessaloniki:hover,
+div.losangeles:hover{
+    overflow:hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+    background-color: pink;
+    background-image: url(lavendersky.png);
+}
+
+
+/* LAGU */
+
+div.lagu{
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    text-align: center;
+    overflow-x: auto;
+    padding: 20px;
+    scroll-behavior: smooth;
+}
+
+div.lagu::-webkit-scrollbar{
+    height: 10px;
+}
+
+div.lagu::-webkit-scrollbar-thumb{
+    background-color: hotpink;
+    border-radius: 10px;
+}
+
+div.lagu::-webkit-scrollbar-track{
+    background-color: aliceblue;
+    border-radius: 10px;
+}
+
+div.lagu img{
+    padding:10px;
+}
+
+div.purplerain,
+div.hdiyl,
+div.somethingstupid,
+div.yglabn,
+div.lovefool{
+    width: 250px;
+    height: 280px;
+    flex: 0 0 250px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(red, green, blue, alpha);
+    color:black;
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+
+div.purplerain:hover,
+div.hdiyl:hover,
+div.somethingstupid:hover,
+div.yglabn:hover,
+div.lovefool:hover{
+    overflow:hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+    background-color: pink;
+    background-image: url(splash.jpg);
+}
+
+div.lagu audio{
+    width: 220px;
+}
+
+
+/* FILM */
+
+div.film{
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    text-align: center;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 20px;
+    scroll-behavior: smooth;
+}
+
+div.film::-webkit-scrollbar{
+    height: 10px;
+}
+
+div.film::-webkit-scrollbar-thumb{
+    background-color: hotpink;
+    border-radius: 10px;
+}
+
+div.film::-webkit-scrollbar-track{
+    background-color: aliceblue;
+    border-radius: 10px;
+}
+
+div.film img{
+    padding:10px;
+}
+
+div.film video{
+    width: 220px;
+    height: 125px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+div.enolaholmes,
+div.dresses,
+div.theodyssey,
+div.daysofsummer,
+div.ihate{
+    width: 250px;
+    height: 430px;
+    flex: 0 0 250px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(red, green, blue, alpha);
+    color:black;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+div.enolaholmes:hover,
+div.dresses:hover,
+div.theodyssey:hover,
+div.daysofsummer:hover,
+div.ihate:hover{
+    overflow:hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.05);
+    background-color: pink;
+    background-image: url(patterns.png);
+}
